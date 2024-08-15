@@ -1,5 +1,4 @@
-# Information_visualisation
-Information Visualization project for the topic : "Unveiling Sales Trends: A Visual Exploration of Customer Behavior and Product Performance"
+# Information_visualisation-Unveiling Sales Trends: A Visual Exploration of Customer Behavior and Product Performance
 
 We have gathered two key datasets to conduct a comprehensive analysis of customer preferences and transaction outcomes:
 
