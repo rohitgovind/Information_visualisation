@@ -18,6 +18,8 @@ Sample Screen Shot of Dataset 2:
 
 Combining the Datasets:
     By merging these two datasets on the common identifiers, Transaction_ID and Customer_ID, we can create a more comprehensive view of the retail sales process. This merged dataset allows us to link customer demographics and transaction details with specific product feedback and ratings.
+    
+Sample Screen Shot of combined Dataset :
 <img width="932" alt="image" src="https://github.com/user-attachments/assets/b168e253-12b1-4b61-bbad-2383de678541">
 
 
