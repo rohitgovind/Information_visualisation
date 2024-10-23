@@ -1,30 +1,46 @@
 # Information_visualisation-Unveiling Sales Trends: A Visual Exploration of Customer Behavior and Product Performance
+We have compiled two key datasets to perform an in-depth analysis of pizza sales, customer preferences, and order outcomes:
 
-We have gathered two key datasets to conduct a comprehensive analysis of customer preferences and transaction outcomes:
+Dataset 1: Order Information
+This dataset captures detailed information about pizza orders, including transaction specifics. Key variables include:
 
-Dataset 1: Product Feedback Details
-    This dataset contains detailed information on product transactions, including feedback from customers. It includes variables such as Transaction_ID, Customer_ID, Product_Category, Product_Brand, Product_Type, Feedback, Shipping_Method, Payment_Method, Order_Status, Ratings, and products. This dataset helps us understand customer feedback and satisfaction related to specific products and transactions.
+pizza_id: Unique identifier for each pizza order.
+order_id: Identifier for each unique order.
+pizza_name_id: Identifier for each specific pizza.
+quantity: Number of pizzas ordered.
+order_date: The date of the transaction.
+order_time: The exact time of the transaction.
+total_price: The total price of the order.
+pizza_size: The size of the pizza (Small, Medium, or Large).
+This dataset helps us understand customer ordering behavior, including the number of pizzas ordered, the time and date of transactions, and the corresponding total cost. It provides essential transactional data that serves as the backbone for exploring sales patterns.
 
-Sample Screen Shot of Dataset 1:
-<img width="898" alt="image" src="https://github.com/user-attachments/assets/2b4e7d50-e1fa-4373-8c43-872f19fb2cba">
+Dataset 2: Pizza Details
+This dataset offers detailed information about the pizzas themselves, including ingredients, pricing, and categories. Key variables include:
 
+pizza_name_id: Identifier for each specific pizza.
+unit_price: The price of a single pizza of the specified size.
+pizza_category: The category of the pizza (Classic, Supreme, Veggie, Chicken, etc.).
+pizza_ingredients: A list of ingredients that make up each pizza.
+pizza_name: The full name of each pizza.
+This dataset provides insight into the variety of pizzas sold, their ingredient composition, and pricing, which can be used to analyze product performance across different categories.
 
-Dataset 2: Customer Transaction Details
-    This dataset captures a broader view of customer transactions, including demographic and purchase information. Key variables include Transaction_ID, Customer_ID, Name, Email, Phone, Address, City, State, Zipcode, Country, Age, Gender, Income, Customer_Segment, Date, Year, Month, Time, Total_Purchases, Amount, Total_Amount, Shipping_Method, Payment_Method, Order_Status, and Ratings. This dataset provides insights into customer demographics and their overall purchasing behavior.
+Combining the Datasets
+By merging Dataset 1 and Dataset 2 using the common identifier, pizza_name_id, we can create a complete view of the pizza ordering process. This combined dataset allows us to link transaction specifics (date, time, quantity) with detailed pizza characteristics (ingredients, price, category), providing a holistic picture of pizza sales and customer preferences.
 
-Sample Screen Shot of Dataset 2:
-<img width="929" alt="image" src="https://github.com/user-attachments/assets/4cd3bd3a-0349-427b-8f3a-4b3541f310a9">
+Planned Analysis
+We aim to conduct a comprehensive analysis of pizza sales trends, focusing on the following key aspects:
 
-Combining the Datasets:
-    By merging these two datasets on the common identifiers, Transaction_ID and Customer_ID, we can create a more comprehensive view of the retail sales process. This merged dataset allows us to link customer demographics and transaction details with specific product feedback and ratings.
-    
-Sample Screen Shot of combined Dataset :
-<img width="932" alt="image" src="https://github.com/user-attachments/assets/b168e253-12b1-4b61-bbad-2383de678541">
+Customer Preferences: Analyze which pizza categories, sizes, and ingredients are most popular among customers.
+Order Trends: Explore transaction patterns by time, date, and order size, identifying peak ordering times and popular pizza combinations.
+Pricing and Revenue Insights: Examine how pizza prices (unit and total) influence ordering behavior, and analyze revenue distribution across different pizza categories and sizes.
+Product Performance: Evaluate the performance of different pizza categories (Classic, Supreme, Veggie, Chicken) in terms of sales volume and customer preference.
+Visualization and Insights
+We will use a variety of visualizations, including:
 
-
-Planned Analysis:
-- We will explore the preferences for shipping methods and payment options among different customer segments, analyzing how these preferences correlate with transaction outcomes such as order status and feedback ratings.
-- By integrating insights from customer demographics and product feedback, we'll identify key drivers of customer satisfaction and repeat purchases.
-- Visualizations such as bar charts, pie charts, heatmaps, line charts, and scatter plots will be used to uncover relationships between customer segments, product categories, and transaction outcomes.
-
-The objective is to provide actionable insights that help businesses understand which customer segments are most valuable, which products are most popular, and what factors contribute to positive or negative customer feedback. This analysis will offer valuable information for targeted marketing and product development strategies.
+Bar Charts to represent the most popular pizza categories and their sales volumes.
+Pie Charts to show the distribution of pizza sizes ordered by customers.
+Line Charts to track order trends over time, identifying peak times for pizza orders.
+Heatmaps to uncover the correlation between order times, pizza size, and total price.
+Scatter Plots to visualize the relationship between pizza pricing and quantity ordered.
+Objective
+The goal of this analysis is to provide actionable insights into customer ordering behavior, product popularity, and sales patterns. By understanding these dynamics, businesses can make informed decisions regarding product offerings, pricing strategies, and marketing campaigns, ultimately enhancing customer satisfaction and maximizing sales potential.
